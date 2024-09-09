@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "rain-guard-pro",
+    "slug": "rain-guard-pro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "build": {
+      "production": {
+        "android": {
+          "buildType": "apk"
+        }
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "enter your key here"
+      }
+    },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "enter your key here"
+        }
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.asharali99.rainguardpro"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "064cff66-f6c4-40e5-b041-9e785ddf9dac"
+      }
+    }
+  }
+}
